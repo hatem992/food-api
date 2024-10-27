@@ -1,0 +1,139 @@
+:root{
+    --main-bg-color:rgb(247, 247, 247);
+    --main-icon-bg-color :rgb(244, 244, 244);
+    --main-text-color : rgb(116, 129, 130);
+    --main-font:"Montserrat", sans-serif;
+    --third-font:"Montserrat Subrayada", sans-serif;
+    --second-font:"Poppins", sans-serif;
+    --main-duration: .5s;
+    --gray-bg:#f7f7f7; 
+}
+body{
+    overflow: hidden;
+}
+
+.main-bg{
+background-color: #A8A8A8;
+}
+.second-bg{
+background-color: #c1c0c0;
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .content ul li {
+    opacity: 0;
+    transform: translateY(100%);
+    animation-fill-mode: forwards; /* Keeps the element in its end position */
+  }
+  
+  .animate {
+    animation: slideUp 0.5s ease forwards;
+  }
+  
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(173, 216, 230, 0.78);
+    z-index:9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: #FF3D00 transparent;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.cursor-text{
+    cursor: text;
+}
+.w-fit{
+    width: fit-content;
+}
+
+img{
+    display: inline-block;
+}
+
+a,li{
+    text-decoration: none;
+}
+
+.menue,li{
+    cursor: pointer;
+}
+
+.image{
+    cursor: pointer;
+}
+
+.head{
+    position: absolute;
+    background-color: #f9f6f6ca;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform .5s;
+
+}
+
+/* .card:hover .head{
+    transform: translateY(0);
+} */
+.card:hover .head{
+    transform: translateY(0);
+}
+
+
+.form-control{
+    display: flex;
+}
+
+
+/* .search-section{
+    display: none;
+} */

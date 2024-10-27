@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exam</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- <div id="sideBar" class="bg-info position-fixed top-0 bottom-0 start-0 d-block ">
+    <div id="sideBarLogo" class="d-flex flex-column justify-content-between align-content-center">
+      <div class="logo">
+        <h2>logo</h2>
+      </div>
+      <i class="fa-solid fa-bars align-self-center fs-2"></i>
+  
+      <div class="icons d-flex flex-column align-self-center">
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+
+    <div class="content">
+      <h3>
+        hello
+      </h3>
+    </div>
+
+  </div> -->
+
+
+
+  <div class="loading">
+    <span class="loader"></span>
+  </div>
+
+
+
+  <div id="sideBar" class=" z-3 position-fixed top-0 bottom-0
+   d-flex">
+      
+      <div class="content bg-black text-white ">
+        <ul class="list-unstyled p-4 mb-0 d-flex flex-column gap-2">
+          <li id="search">Search</li>
+          <li id="categories">Categories</li>
+          <li id="area">Area</li>
+          <li id="ingredients">Ingredients</li>
+        </ul>
+      </div>
+
+
+    <div class="logoBar p-1 main-bg d-flex flex-column justify-content-between align-content-center">
+      <h1>logo</h1>
+      <div class="menue align-self-center">
+        <i class="fa-solid fa-bars  fs-2"></i>
+      </div>
+      <div class="icons d-flex flex-column align-self-center">
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+
+    </div>
+
+
+     <section class="pt-5 mb-5 main-section min-vh-100">
+      <div class="container-fluid container-md position-relative me-md-2 me-lg-auto">
+        <div class="row main-content offset-1 d-flex g-4 justify-content-center align-content-center">
+
+
+
+        </div>
+      </div>
+    </section> 
+
+    <!-- //////////////////////////////////////////////////////////// -->
+     <!-- <section class="search-section pt-5 min-vh-100 bg-black d-none" >
+       <div class="container-fluid ay-7aga container-md offset-2 col-10 ms-auto">
+          <div class="row main-content d-flex">
+            <div class="col-sm-12 offset-md-2 col-md-5">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" id="searchByName" type="search" placeholder="Search by name" aria-label="Search">
+                <button class="btn btn-outline-success" id="searchByMealName" type="button">Search</button>
+
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" id="searchByLetter" type="search" placeholder="Search by first letter">
+              </form>
+            </div>
+  
+          <div class="row search-content">
+            <div class="col-md-3 g-4">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  -->
+
+
+    <!-- ///////////////////////////////////////////////////////////// -->
+
+     <!-- <section class="meal-section pt-5">
+      <div class="container">
+        <div class="row meal-section-row">
+
+        </div>
+      </div>
+    </section>  -->
+
+    <!-- ////////////////////////////////////////////////////////////// -->
+
+<!-- 
+    <section class="category-section min-vh-100 bg-secondary" >
+      <div class="container">
+        <div class="row category-section-row">
+
+        </div>
+      </div>
+    </section> -->
+<!-- ////////////////////////////////////////////////////////////////// -->
+
+<!-- 
+<section class="category-section min-vh-100 bg-secondary" >
+  <div class="container">
+    <div class="row ingredient-section-row">
+
+    </div>
+  </div>
+</section> -->
+
+<!-- //////////////////////////////////////////////////////////////// -->
+
+ <section class="form-section p-5 mt-5 second-bg" >
+  <div class="container-fluid">
+    <div class="row mb-2 ">
+      <div class="col-12 d-flex justify-content-center align-content-center">
+        <h2>contact us</h2>
+      </div>
+    </div>
+    <div class="row offset-1 d-flex g-4 justify-content-center align-content-center">
+
+      <div class="col-md-5">
+        <input type="text" class="form-control" id="userName" placeholder="Enter Your Name"  autocomplete="off">
+        <div class="d-none">
+          <p class="text-danger fs-4">invalid user name</p>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <input type="email" class="form-control" id="userEmail" placeholder="Enter Your Email" autocomplete="off">
+        <div class="d-none">
+          <p class="text-danger fs-4 ">invalid Email</p></div>
+      </div>
+
+      <div class="col-md-5">
+        <input type="text" class="form-control" placeholder="Enter Your Phone" autocomplete="off"  id="userPhone">
+        <div class="d-none">
+          <p class="text-danger fs-4 ">invalid phone number</p>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <input type="text" class="form-control" placeholder="Enter Your Age" autocomplete="off" id="userAge">
+        <div class="d-none">
+          <p class="text-danger fs-4 ">invalid age</p>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <input type="password" class="form-control" placeholder="Enter your Password" autocomplete="off" id="userPass">
+        <div class="d-none">
+          <p class="text-danger fs-4 ">invalid Password</p>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <input type="password" class="form-control" placeholder="Repassword" autocomplete="off" id="userRepass">
+        <div class="d-none">
+          <p class="text-danger fs-4">doesn't match password</p>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex justify-content-center">
+        <button class="btn btn-success w-fit" disabled id="submit" type="button">Submit</button>    
+      </div>
+      
+    </div>
+  </div>
+</section> 
+
+
+
+    <!-- ////////////////////////////////////////////////////////////// -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
