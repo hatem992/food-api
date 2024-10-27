@@ -341,7 +341,7 @@ function displayCategories(array,count=25){
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden" onclick="categoryClick('${array[index].strCategory}')">
               <div class="image w-100 rounded-2 overflow-hidden">
-                <img src="../images/category.png" alt="food image" class="w-100">
+                <img src="https://cdn-icons-png.freepik.com/256/857/857681.png?semt=ais_hybrid" alt="food image" class="w-100">
   
                 <div class="head-category main-bg mt-1 text-center p-2 rounded-2 d-flex align-items-center justify-content-center">            
                 <h2>${array[index].strCategory}</h2>
@@ -397,7 +397,7 @@ function displayIngredients(array,count=20){
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden" onclick="ingredientClick('${array[index].strIngredient}')">
               <div class="image w-100 rounded-2 overflow-hidden">
-                <img src="../images/ingredients.png" alt="food image" class="w-100">
+                <img src="https://cdn-icons-png.flaticon.com/512/4080/4080032.png" alt="food image" class="w-100">
   
                 <div class="head p-2 rounded-2 d-flex align-items-center">            
                 <h2>${array[index].strIngredient}</h2>
@@ -456,7 +456,7 @@ function displayArea(array,count=25){
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden" onclick="areaClick('${array[index].strArea}')">
               <div class="image w-100 rounded-2 overflow-hidden">
-                <img src="../images/area.png" alt="food image" class="w-100">
+                <img src="https://cdn-icons-png.flaticon.com/512/9746/9746676.png" alt="food image" class="w-100">
   
                 <div class="areaHead p-2 rounded-2 d-flex align-items-center justify-content-center">            
                 <h2>${array[index].strArea}</h2>
