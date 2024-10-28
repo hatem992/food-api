@@ -277,9 +277,35 @@ else{
 // );
 
 function displaySearchByFirstLetter(array,count=25){
+
+    $(".main-content").html(
+    `<div class="col-sm-12 offset-md-2 col-md-5">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" id="searchByName" type="search" placeholder="Search by name" aria-label="Search">
+                <button class="btn btn-outline-success" id="searchByMealName" type="button" onclick="searchMealByName($('#searchByName').val())">Search</button>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-5">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" id="searchByLetter" type="search"
+                oninput="searchMealByFirstLetter($('#searchByLetter').val())" placeholder="Search by first letter">
+              </form>
+            </div>
+  
+          <div class="row search-content">
+            <div class="col-md-3 g-4">
+  
+            </div>
+          </div>
+    `
+        ); 
+
+
+  
+  
   
   for (let index = 0; index < array.length; index++) {
-    $(".search-content").append(
+    $(".main-content").append(
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden " onclick="cardClick(${array[index].idMeal})">
               <div class="image w-100 rounded-2 overflow-hidden">
