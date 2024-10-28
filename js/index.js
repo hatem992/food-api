@@ -277,7 +277,7 @@ else{
 // );
 
 function displaySearchByFirstLetter(array,count=25){
-   for (let index = 0; index < count; index++) {
+   for (let index = 0; index < array.length; index++) {
     
     $(".main-content").append(
       ` <div class="col-md-3 g-4 ">
