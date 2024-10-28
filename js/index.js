@@ -254,7 +254,7 @@ function displaySearchByName(array){
 
 //////////////////////////////////////////////////////////
 async function searchMealByFirstLetter(value){
-  let response = await fetch(`https:www.themealdb.com/api/json/v1/1/search.php?f=${value}`)
+  let response = await fetch(`https//:www.themealdb.com/api/json/v1/1/search.php?f=${value}`)
  let data = await response.json()
  console.log(data.meals);
  if (data.meals === null) {
@@ -279,7 +279,7 @@ else{
 function displaySearchByFirstLetter(array,count=25){
    for (let index = 0; index < count; index++) {
     
-    $(".search-content").append(
+    $(".main-content").append(
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden " onclick="cardClick(${array[index].idMeal})">
               <div class="image w-100 rounded-2 overflow-hidden">
