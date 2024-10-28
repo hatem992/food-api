@@ -277,7 +277,7 @@ else{
 // );
 
 function displaySearchByFirstLetter(array,count=25){
-
+    $(".main-content").html("")
     $(".main-content").html(
     `<div class="col-sm-12 offset-md-2 col-md-5">
               <form class="d-flex" role="search">
