@@ -279,7 +279,7 @@ else{
 function displaySearchByFirstLetter(array,count=25){
    for (let index = 0; index < count; index++) {
     
-    $(".main-content").append(
+    $(".search-content").append(
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden " onclick="cardClick(${array[index].idMeal})">
               <div class="image w-100 rounded-2 overflow-hidden">
