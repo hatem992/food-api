@@ -277,10 +277,9 @@ else{
 // );
 
 function displaySearchByFirstLetter(array,count=25){
-  $(".main-content").html("")
-    
+  
   for (let index = 0; index < array.length; index++) {
-    
+    $(".main-content").html("")
     $(".main-content").append(
       ` <div class="col-md-3 g-4 ">
             <div class="card position-relative overflow-hidden " onclick="cardClick(${array[index].idMeal})">
