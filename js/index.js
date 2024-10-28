@@ -254,7 +254,7 @@ function displaySearchByName(array){
 
 //////////////////////////////////////////////////////////
 async function searchMealByFirstLetter(value){
-  let response = await fetch(`https//:www.themealdb.com/api/json/v1/1/search.php?f=${value}`)
+  let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${value}`)
  let data = await response.json()
  console.log(data.meals);
  if (data.meals === null) {
